@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+}
+
+#menu-h {
+    background: rgb(255, 255, 255);
+}
+
+#menu-h ul{
+    max-width: 550px;
+    list-style: none;
+    padding: 0;
+}
+
+#menu-h ul li{
+    display: inline
+}
+
+#menu-h ul li a{
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    padding: 15px;
+    display: inline-block;
+    transition: background .3s;
+}
+
+#menu-h ul li a:hover{
+    background-color: rgb(152, 137, 175);
+}
+
+#menu-h ul li:last-child a {
+    float: right;
+    color: #000000;
+    background-color: rgb(152, 137, 175);
+}
+
+headline 
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    background: #663300;
+}
+
+.container{
+    width: 350px;
+    height: 400px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.container .product{
+    background: #fafafa;
+    padding: 20px;
+    text-align: center;
+    border-radius: 15px;
+}
+
+.container .product .image{
+    width: 300px;
+    height: 150px;
+    margin: auto;
+}
+
+.container .product .image .product-image{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    transition: 0.8s linear;
+}
+
+.container .product .color{
+    display: flex;
+    align-items:center ;
+    justify-content: center;
+    margin: 15px;
+}
+
+.container .product .color span{
+    width: 15px;
+    height: 15px;
+    margin: 0 15px;
+    border-radius: 50%;
+    background: #663300;
+    cursor: pointer;
+    position: relative;
+}
+
+.container .product .color .red{
+    background: #974040;
+}
+
+.container .product .color .green{
+    background: #247c24;
+}
+
+.container .product .color .leites{
+    background: #c0b3a8;
+}
+
+.container .product .color .brown{
+    background: #472a0e;
+}
+
+.container .product .color .active::after{
+    content: "";
+    width: 17px;
+    height: 17px;
+    border-radius: 50%;
+    border: 2px solid #333;
+    position: absolute;
+    left: -3px;
+    top: -3px;
+}
+
+.container .product .title{
+    font-size: 22px;
+    text-align: center;
+}
+
+.container .product .detail{
+    text-align: center;
+}
+
+.container .product .detail p{
+    margin: 15px;
+    font-size: 25px;
+}
+
+.container .product .detail p span{
+    color: #663300;
+}
+
+.container .product .detail a{
+    text-decoration: none;
+    background: #663300;
+    padding: 8px 45px;
+    border-radius: 8px;
+    color: white;
+    margin: 15px;
+}
